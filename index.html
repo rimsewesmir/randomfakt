@@ -25,12 +25,19 @@ const seznamVet = [
 "Neil Armstrong se v roce 1969 jako první člověk prošel po povrchu Měsíce. Následoval ho Buzz Aldrin",
 "Sonda Voyager2 jako první prozkoumala Uran a Neptun",
 "Galileo Galilei jako první použil dalekohled ke zkoumání vesmíru",
-"Saturn má nejvýraznější prstence ve sluneční soustavě, není ale jediný; prstence mají všechny plynné planety(Jupiter, Saturn, Uran a Neptun)", 
+"Saturn má nejvýraznější prstence ve sluneční soustavě, není ale jediný; prstence mají všechny plynné planety(Jupiter, Saturn, Uran a Neptun)",
+"Mars je po Zemi nejlepší planeta pro život. Průměrná teplota je sice cca 60°C, ale dosahuje až 20°C.",
+"Země je jediné místo ve vesmíru, na kterém se prokazatelně nachází kapalná voda",
+"Vladimír Remek byl 3. člověk na světě, který byl ve vesmíru. Byl to Čech.",
+"Mezinárodní vesmírná stanice (ISS) oběhne zemi jednou za 90 minut.",
+"Slunci nejbližší hvězda se jmenuje Proxima Centauri a nachází se ve vzdálenosti 4 světelných let (cca 40 000 000 000 000km!)",
+"Jestli vás zajímá vesmír, navštivte kanál <a href='https://youtube.com/@RímseWesmíR'>RímseWesmíR</a>."
+  
 ];
 
 function generujVetu() {
   const nahodnaVeta = seznamVet[Math.floor(Math.random() * seznamVet.length)];
-  document.getElementById("vysledek").textContent = nahodnaVeta;
+  document.getElementById("vysledek").innerHTML = nahodnaVeta;
 }
 </script>
 
