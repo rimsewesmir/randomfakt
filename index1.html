@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Fakta o vesmíru</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    button { padding: 10px 20px; font-size: 16px; border-radius: 5px; display: block; margin: 0 auto; cursor: pointer;background-color: rgb(255, 255, 255);color: black; }
+    button:hover{color: rgb(255, 255, 255);background-color: black;}
+    h2{text-align: center; font-size: 40px;}
+    #vysledek { margin-top: 20px; font-weight: bold; font-size: 1.2em; }
+  </style>
+</head>
+<body>
+
+<h2>Náhodný fakt o vesmíru</h2>
+<button onclick="generujVetu()">Náhodná informace</button>
+
+<div id="vysledek"></div>
+
+<script>
+const seznamVet = [
+"Jupiter je největší z planet sluneční soustavy",
+"William Herschel objevil planetu Uran a infračervené záření(teplo)",
+"Neil Armstrong se v roce 1969 jako první člověk prošel po povrchu Měsíce. Následoval ho Buzz Aldrin",
+"Sonda Voyager2 jako první prozkoumala Uran a Neptun",
+"Galileo Galilei jako první použil dalekohled ke zkoumání vesmíru",
+"Saturn má nejvýraznější prstence ve sluneční soustavě, není ale jediný; prstence mají všechny plynné planety(Jupiter, Saturn, Uran a Neptun)", 
+];
+
+function generujVetu() {
+  const nahodnaVeta = seznamVet[Math.floor(Math.random() * seznamVet.length)];
+  document.getElementById("vysledek").textContent = nahodnaVeta;
+}
+</script>
+
+</body>
+</html>
